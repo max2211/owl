@@ -1,0 +1,11 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/OpenCV"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/GVRSDK" "${PODS_ROOT}/Headers/Public/OpenCV"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/GVRSDK/GVRView/Libraries"
+OTHER_CFLAGS = $(inherited)  -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/GVRSDK" -isystem "${PODS_ROOT}/Headers/Public/OpenCV"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"GVRView_arm" -l"GVRView_x86" -l"c++" -l"stdc++" -framework "AVFoundation" -framework "Accelerate" -framework "AssetsLibrary" -framework "AudioToolbox" -framework "CoreGraphics" -framework "CoreImage" -framework "CoreMedia" -framework "CoreMotion" -framework "CoreText" -framework "CoreVideo" -framework "Foundation" -framework "GLKit" -framework "MediaPlayer" -framework "OpenGLES" -framework "QuartzCore" -framework "UIKit" -framework "opencv2"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

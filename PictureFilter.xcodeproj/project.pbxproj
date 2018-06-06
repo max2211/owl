@@ -7,12 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E4EAB4754FE15040C88029C /* Pods_PictureFilter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B033C25D24DE681FF18787 /* Pods_PictureFilter.framework */; };
+		501EEA081F9AA37400CB2EDC /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501EEA071F9AA37400CB2EDC /* BrowseViewController.swift */; };
+		501EEA0C1F9AB2EF00CB2EDC /* grand_canyon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 501EEA091F9AB2EF00CB2EDC /* grand_canyon.jpg */; };
+		501EEA0D1F9AB2EF00CB2EDC /* underwater.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 501EEA0A1F9AB2EF00CB2EDC /* underwater.jpg */; };
+		501EEA0E1F9AB2EF00CB2EDC /* sindhu_beach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 501EEA0B1F9AB2EF00CB2EDC /* sindhu_beach.jpg */; };
+		501EEA101F9AB6D400CB2EDC /* PhotoAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501EEA0F1F9AB6D400CB2EDC /* PhotoAlbum.swift */; };
+		507BD4751F9D7C1300812E06 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507BD4741F9D7C1300812E06 /* PhotosViewController.swift */; };
+		507BD4771F9D875900812E06 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507BD4761F9D875900812E06 /* PhotoCell.swift */; };
 		50BA48BC1DA81726002F505E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BA48BB1DA81726002F505E /* AppDelegate.swift */; };
-		50BA48BE1DA81726002F505E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BA48BD1DA81726002F505E /* ViewController.swift */; };
 		50BA48C11DA81726002F505E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50BA48BF1DA81726002F505E /* Main.storyboard */; };
-		50BA48C31DA81726002F505E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50BA48C21DA81726002F505E /* Assets.xcassets */; };
 		50BA48C61DA81726002F505E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50BA48C41DA81726002F505E /* LaunchScreen.storyboard */; };
 		50BA48D11DA81726002F505E /* PictureFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BA48D01DA81726002F505E /* PictureFilterTests.swift */; };
+		50BA48DE1DA82200002F505E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50BA48DD1DA82200002F505E /* Assets.xcassets */; };
+		50BA48E01DA82EED002F505E /* WrapMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BA48DF1DA82EED002F505E /* WrapMap.swift */; };
+		50C7BD3A1E2651D9007186EA /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C7BD391E2651D9007186EA /* CaptureViewController.swift */; };
+		50C7BD3C1E2651E7007186EA /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C7BD3B1E2651E7007186EA /* CameraController.swift */; };
+		50EB51241E1CD3C600B2B05C /* CVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 50EB51231E1CD3C600B2B05C /* CVWrapper.mm */; };
+		50EB51271E1CD56700B2B05C /* circles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50EB51251E1CD56700B2B05C /* circles.cpp */; };
+		50EB512A1E1CDD8100B2B05C /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 50EB51291E1CDD8100B2B05C /* UIImage+OpenCV.mm */; };
+		50EF7A0B1F9827A200993C47 /* PhotoCaptureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EF7A0A1F9827A200993C47 /* PhotoCaptureDelegate.swift */; };
+		50EF7A0D1F99A83700993C47 /* MovieWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EF7A0C1F99A83700993C47 /* MovieWriter.swift */; };
+		50FE2F2C1DAC5AFB00EE03C1 /* UnwrapFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FE2F2B1DAC5AFB00EE03C1 /* UnwrapFilter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +42,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12CB928E18D0BE7323A3262F /* Pods-PictureFilter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PictureFilter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PictureFilter/Pods-PictureFilter.debug.xcconfig"; sourceTree = "<group>"; };
+		501EEA071F9AA37400CB2EDC /* BrowseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
+		501EEA091F9AB2EF00CB2EDC /* grand_canyon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = grand_canyon.jpg; path = "../../Vacation_360/Vacation 360/grand_canyon.jpg"; sourceTree = "<group>"; };
+		501EEA0A1F9AB2EF00CB2EDC /* underwater.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = underwater.jpg; path = "../../Vacation_360/Vacation 360/underwater.jpg"; sourceTree = "<group>"; };
+		501EEA0B1F9AB2EF00CB2EDC /* sindhu_beach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sindhu_beach.jpg; path = "../../Vacation_360/Vacation 360/sindhu_beach.jpg"; sourceTree = "<group>"; };
+		501EEA0F1F9AB6D400CB2EDC /* PhotoAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAlbum.swift; sourceTree = "<group>"; };
+		50464D4F1E36B76B00DE61AE /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		50464D511E36DEA100DE61AE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		507BD4741F9D7C1300812E06 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		507BD4761F9D875900812E06 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		50BA48B81DA81726002F505E /* PictureFilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PictureFilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50BA48BB1DA81726002F505E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		50BA48BD1DA81726002F505E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		50BA48C01DA81726002F505E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		50BA48C21DA81726002F505E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50BA48C51DA81726002F505E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50BA48C71DA81726002F505E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50BA48CC1DA81726002F505E /* PictureFilterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PictureFilterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50BA48D01DA81726002F505E /* PictureFilterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureFilterTests.swift; sourceTree = "<group>"; };
 		50BA48D21DA81726002F505E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50BA48DD1DA82200002F505E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50BA48DF1DA82EED002F505E /* WrapMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WrapMap.swift; sourceTree = "<group>"; };
+		50C7BD391E2651D9007186EA /* CaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
+		50C7BD3B1E2651E7007186EA /* CameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		50EB51211E1CD3C500B2B05C /* PictureFilter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PictureFilter-Bridging-Header.h"; sourceTree = "<group>"; };
+		50EB51221E1CD3C600B2B05C /* CVWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVWrapper.h; sourceTree = "<group>"; };
+		50EB51231E1CD3C600B2B05C /* CVWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CVWrapper.mm; sourceTree = "<group>"; };
+		50EB51251E1CD56700B2B05C /* circles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = circles.cpp; sourceTree = "<group>"; };
+		50EB51261E1CD56700B2B05C /* circles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = circles.h; sourceTree = "<group>"; };
+		50EB51281E1CDD8100B2B05C /* UIImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
+		50EB51291E1CDD8100B2B05C /* UIImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+OpenCV.mm"; sourceTree = "<group>"; };
+		50EF7A0A1F9827A200993C47 /* PhotoCaptureDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureDelegate.swift; sourceTree = "<group>"; };
+		50EF7A0C1F99A83700993C47 /* MovieWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieWriter.swift; sourceTree = "<group>"; };
+		50FE2F2B1DAC5AFB00EE03C1 /* UnwrapFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwrapFilter.swift; sourceTree = "<group>"; };
+		948D311777878861E7D186E0 /* Pods-PictureFilter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PictureFilter.release.xcconfig"; path = "Pods/Target Support Files/Pods-PictureFilter/Pods-PictureFilter.release.xcconfig"; sourceTree = "<group>"; };
+		F9B033C25D24DE681FF18787 /* Pods_PictureFilter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PictureFilter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E4EAB4754FE15040C88029C /* Pods_PictureFilter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +103,8 @@
 				50BA48BA1DA81726002F505E /* PictureFilter */,
 				50BA48CF1DA81726002F505E /* PictureFilterTests */,
 				50BA48B91DA81726002F505E /* Products */,
+				703D676F0982A0A6FCF9D0D1 /* Pods */,
+				8CA8F641957741192F295E31 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +120,31 @@
 		50BA48BA1DA81726002F505E /* PictureFilter */ = {
 			isa = PBXGroup;
 			children = (
+				50FE2F2A1DAC5AB900EE03C1 /* customFilters */,
+				501EEA091F9AB2EF00CB2EDC /* grand_canyon.jpg */,
+				501EEA0B1F9AB2EF00CB2EDC /* sindhu_beach.jpg */,
+				501EEA0A1F9AB2EF00CB2EDC /* underwater.jpg */,
+				50EB51211E1CD3C500B2B05C /* PictureFilter-Bridging-Header.h */,
+				50EB51281E1CDD8100B2B05C /* UIImage+OpenCV.h */,
+				50EB51291E1CDD8100B2B05C /* UIImage+OpenCV.mm */,
+				50EB51221E1CD3C600B2B05C /* CVWrapper.h */,
+				50EB51231E1CD3C600B2B05C /* CVWrapper.mm */,
+				50EB51261E1CD56700B2B05C /* circles.h */,
+				50EB51251E1CD56700B2B05C /* circles.cpp */,
+				501EEA071F9AA37400CB2EDC /* BrowseViewController.swift */,
+				507BD4741F9D7C1300812E06 /* PhotosViewController.swift */,
+				50C7BD391E2651D9007186EA /* CaptureViewController.swift */,
+				50EF7A0A1F9827A200993C47 /* PhotoCaptureDelegate.swift */,
+				50EF7A0C1F99A83700993C47 /* MovieWriter.swift */,
+				501EEA0F1F9AB6D400CB2EDC /* PhotoAlbum.swift */,
 				50BA48BB1DA81726002F505E /* AppDelegate.swift */,
-				50BA48BD1DA81726002F505E /* ViewController.swift */,
 				50BA48BF1DA81726002F505E /* Main.storyboard */,
-				50BA48C21DA81726002F505E /* Assets.xcassets */,
+				507BD4761F9D875900812E06 /* PhotoCell.swift */,
+				50BA48DD1DA82200002F505E /* Assets.xcassets */,
 				50BA48C41DA81726002F505E /* LaunchScreen.storyboard */,
 				50BA48C71DA81726002F505E /* Info.plist */,
+				50BA48DF1DA82EED002F505E /* WrapMap.swift */,
+				50C7BD3B1E2651E7007186EA /* CameraController.swift */,
 			);
 			path = PictureFilter;
 			sourceTree = "<group>";
@@ -96,6 +158,33 @@
 			path = PictureFilterTests;
 			sourceTree = "<group>";
 		};
+		50FE2F2A1DAC5AB900EE03C1 /* customFilters */ = {
+			isa = PBXGroup;
+			children = (
+				50FE2F2B1DAC5AFB00EE03C1 /* UnwrapFilter.swift */,
+			);
+			name = customFilters;
+			sourceTree = "<group>";
+		};
+		703D676F0982A0A6FCF9D0D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12CB928E18D0BE7323A3262F /* Pods-PictureFilter.debug.xcconfig */,
+				948D311777878861E7D186E0 /* Pods-PictureFilter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8CA8F641957741192F295E31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50464D511E36DEA100DE61AE /* AVFoundation.framework */,
+				50464D4F1E36B76B00DE61AE /* AssetsLibrary.framework */,
+				F9B033C25D24DE681FF18787 /* Pods_PictureFilter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50BA48D51DA81726002F505E /* Build configuration list for PBXNativeTarget "PictureFilter" */;
 			buildPhases = (
+				2278BA4F16C7CD7CE0700797 /* [CP] Check Pods Manifest.lock */,
 				50BA48B41DA81726002F505E /* Sources */,
 				50BA48B51DA81726002F505E /* Frameworks */,
 				50BA48B61DA81726002F505E /* Resources */,
+				B7AF45FA5745079E9276E307 /* [CP] Embed Pods Frameworks */,
+				56F73C841CB1303A09155393 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -141,15 +233,18 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Matthew Mayers";
 				TargetAttributes = {
 					50BA48B71DA81726002F505E = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 8HPS9S33VQ;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					50BA48CB1DA81726002F505E = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 50BA48B71DA81726002F505E;
 					};
@@ -179,8 +274,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				501EEA0E1F9AB2EF00CB2EDC /* sindhu_beach.jpg in Resources */,
+				50BA48DE1DA82200002F505E /* Assets.xcassets in Resources */,
 				50BA48C61DA81726002F505E /* LaunchScreen.storyboard in Resources */,
-				50BA48C31DA81726002F505E /* Assets.xcassets in Resources */,
+				501EEA0C1F9AB2EF00CB2EDC /* grand_canyon.jpg in Resources */,
+				501EEA0D1F9AB2EF00CB2EDC /* underwater.jpg in Resources */,
 				50BA48C11DA81726002F505E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,13 +292,83 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2278BA4F16C7CD7CE0700797 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PictureFilter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56F73C841CB1303A09155393 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PictureFilter/Pods-PictureFilter-resources.sh",
+				"${PODS_ROOT}/GVRSDK/Base/Resources/CardboardSDK.bundle",
+				"${PODS_ROOT}/GVRSDK/Base/Resources/GoogleKitCore.bundle",
+				"${PODS_ROOT}/GVRSDK/Base/Resources/GoogleKitDialogs.bundle",
+				"${PODS_ROOT}/GVRSDK/Base/Resources/GoogleKitHUD.bundle",
+				"${PODS_ROOT}/GVRSDK/Base/Resources/MaterialRobotoFontLoader.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PictureFilter/Pods-PictureFilter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7AF45FA5745079E9276E307 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PictureFilter/Pods-PictureFilter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		50BA48B41DA81726002F505E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50BA48BE1DA81726002F505E /* ViewController.swift in Sources */,
+				50C7BD3C1E2651E7007186EA /* CameraController.swift in Sources */,
+				507BD4751F9D7C1300812E06 /* PhotosViewController.swift in Sources */,
+				50FE2F2C1DAC5AFB00EE03C1 /* UnwrapFilter.swift in Sources */,
+				501EEA101F9AB6D400CB2EDC /* PhotoAlbum.swift in Sources */,
+				50EB51241E1CD3C600B2B05C /* CVWrapper.mm in Sources */,
+				507BD4771F9D875900812E06 /* PhotoCell.swift in Sources */,
+				501EEA081F9AA37400CB2EDC /* BrowseViewController.swift in Sources */,
+				50C7BD3A1E2651D9007186EA /* CaptureViewController.swift in Sources */,
+				50EB51271E1CD56700B2B05C /* circles.cpp in Sources */,
+				50EB512A1E1CDD8100B2B05C /* UIImage+OpenCV.mm in Sources */,
+				50BA48E01DA82EED002F505E /* WrapMap.swift in Sources */,
+				50EF7A0B1F9827A200993C47 /* PhotoCaptureDelegate.swift in Sources */,
 				50BA48BC1DA81726002F505E /* AppDelegate.swift in Sources */,
+				50EF7A0D1F99A83700993C47 /* MovieWriter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +419,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -259,7 +429,12 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -301,7 +476,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -309,7 +486,12 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -337,25 +519,44 @@
 		};
 		50BA48D61DA81726002F505E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12CB928E18D0BE7323A3262F /* Pods-PictureFilter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HPS9S33VQ;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = PictureFilter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.PictureFilter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PictureFiltermzm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PictureFilter/PictureFilter-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		50BA48D71DA81726002F505E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 948D311777878861E7D186E0 /* Pods-PictureFilter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HPS9S33VQ;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = PictureFilter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.PictureFilter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PictureFiltermzm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PictureFilter/PictureFilter-Bridging-Header.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -368,7 +569,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.PictureFilterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PictureFilter.app/PictureFilter";
 			};
 			name = Debug;
@@ -382,7 +584,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.PictureFilterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PictureFilter.app/PictureFilter";
 			};
 			name = Release;
@@ -406,6 +609,7 @@
 				50BA48D71DA81726002F505E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50BA48D81DA81726002F505E /* Build configuration list for PBXNativeTarget "PictureFilterTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +618,7 @@
 				50BA48DA1DA81726002F505E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

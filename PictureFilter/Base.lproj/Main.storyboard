@@ -1,26 +1,195 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13528" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13526"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Capture View Controller-->
+        <scene sceneID="cRs-nz-LQp">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="610-K0-FzI" customClass="CaptureViewController" customModule="PictureFilter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="v2O-W9-5La"/>
+                        <viewControllerLayoutGuide type="bottom" id="jkk-dP-j4R"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="lgI-Pw-5Po" customClass="GLKView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ItJ-dL-be9">
+                                <rect key="frame" x="150" y="562" width="75" height="75"/>
+                                <state key="normal" image="button_video_normal">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="recordButtonPressed:" destination="610-K0-FzI" eventType="touchUpInside" id="I0w-Ar-9gv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tn8-8I-Fmc">
+                                <rect key="frame" x="170" y="538" width="35" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Attach OWL lens to the back camera. Then tap calibrate!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAh-oc-FgH">
+                                <rect key="frame" x="16" y="28" width="343" height="244"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvF-St-LWn">
+                                <rect key="frame" x="101" y="592" width="173" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Calibrate">
+                                    <color key="titleColor" red="0.16594616369975138" green="0.84281897668393779" blue="0.16312517400775153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="calibrateButtonPressed:" destination="610-K0-FzI" eventType="touchUpInside" id="q6c-yH-m4x"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8QB-ep-8lx">
+                                <rect key="frame" x="137" y="634" width="101" height="29"/>
+                                <segments>
+                                    <segment title="Photo"/>
+                                    <segment title="Video"/>
+                                </segments>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <connections>
+                                    <action selector="photoVideoStateChanged:" destination="610-K0-FzI" eventType="valueChanged" id="m6M-9H-bxH"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4U-db-l6O">
+                                <rect key="frame" x="16" y="20" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="back_arrow"/>
+                                <connections>
+                                    <action selector="unwindButtonPressed:" destination="610-K0-FzI" eventType="touchUpInside" id="TyI-BK-nVB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ItJ-dL-be9" firstAttribute="centerX" secondItem="lgI-Pw-5Po" secondAttribute="centerX" id="0TC-wH-pda"/>
+                            <constraint firstItem="jkk-dP-j4R" firstAttribute="top" secondItem="ItJ-dL-be9" secondAttribute="bottom" constant="30" id="9mr-F4-224"/>
+                            <constraint firstItem="ItJ-dL-be9" firstAttribute="top" secondItem="Tn8-8I-Fmc" secondAttribute="bottom" constant="5" id="HI2-eF-pFt"/>
+                            <constraint firstAttribute="trailing" secondItem="gAh-oc-FgH" secondAttribute="trailing" constant="16" id="ICQ-1M-wKL"/>
+                            <constraint firstItem="gAh-oc-FgH" firstAttribute="leading" secondItem="lgI-Pw-5Po" secondAttribute="leading" constant="16" id="bCe-2b-gOk"/>
+                            <constraint firstItem="jkk-dP-j4R" firstAttribute="top" secondItem="8QB-ep-8lx" secondAttribute="bottom" constant="5" id="jsQ-Be-pWn"/>
+                            <constraint firstItem="8QB-ep-8lx" firstAttribute="centerX" secondItem="lgI-Pw-5Po" secondAttribute="centerX" id="kQF-HB-2Vc"/>
+                            <constraint firstItem="Tn8-8I-Fmc" firstAttribute="centerX" secondItem="lgI-Pw-5Po" secondAttribute="centerX" id="ltE-jL-loi"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="calibrateButton" destination="vvF-St-LWn" id="laf-4c-nqg"/>
+                        <outlet property="calibrateDirections" destination="gAh-oc-FgH" id="JvD-qm-20g"/>
+                        <outlet property="durationLabel" destination="Tn8-8I-Fmc" id="eDu-0l-3uJ"/>
+                        <outlet property="photoVideoSelector" destination="8QB-ep-8lx" id="reY-tv-s45"/>
+                        <outlet property="recordButton" destination="ItJ-dL-be9" id="blu-VN-f2d"/>
+                        <outlet property="unwindButton" destination="D4U-db-l6O" id="MbY-7W-eEZ"/>
+                        <segue destination="M9T-lW-w0I" kind="unwind" identifier="unwindSeguetoBrowseViewController" unwindAction="unwindToBrowseViewControllerWithSegue:" id="Mq3-eU-slW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RCF-JI-cY9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="M9T-lW-w0I" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1333.5999999999999" y="580.65967016491754"/>
+        </scene>
+        <!--Browse View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="BrowseViewController" customModule="PictureFilter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="38D-DY-HqL"/>
+                        <viewControllerLayoutGuide type="bottom" id="3xy-4q-vn5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W4p-7l-tIV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b4g-iL-gKd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="67K-HH-Iyb" kind="embed" id="6co-TK-ma1"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfm-MF-Mab">
+                                <rect key="frame" x="299" y="28" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="camera_icon"/>
+                                <connections>
+                                    <segue destination="610-K0-FzI" kind="show" id="ms6-3f-kHB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="cameraSegueButton" destination="Pfm-MF-Mab" id="ELI-Zc-og4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="373.60000000000002" y="580.65967016491754"/>
+        </scene>
+        <!--Photos View Controller-->
+        <scene sceneID="ioF-k7-Lzw">
+            <objects>
+                <collectionViewController id="67K-HH-Iyb" customClass="PhotosViewController" customModule="PictureFilter" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="o4a-tA-Mo2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ObB-iZ-e9A">
+                            <size key="itemSize" width="200" height="200"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="360Cell" id="sQ9-4t-y5L" customClass="PhotoCell" customModule="PictureFilter" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="0.0" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KqF-FG-QPC">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="KqF-FG-QPC" firstAttribute="leading" secondItem="sQ9-4t-y5L" secondAttribute="leading" id="8sg-pc-ZYe"/>
+                                    <constraint firstAttribute="bottom" secondItem="KqF-FG-QPC" secondAttribute="bottom" id="KcM-eR-nDw"/>
+                                    <constraint firstAttribute="trailing" secondItem="KqF-FG-QPC" secondAttribute="trailing" id="VwS-QQ-Yvh"/>
+                                    <constraint firstItem="KqF-FG-QPC" firstAttribute="top" secondItem="sQ9-4t-y5L" secondAttribute="top" id="lvX-iv-w4r"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="KqF-FG-QPC" id="aXX-tw-DWj"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="67K-HH-Iyb" id="9JL-fg-b43"/>
+                            <outlet property="delegate" destination="67K-HH-Iyb" id="o9Q-uF-hWh"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hzm-9h-Nox" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="373.60000000000002" y="1310.1949025487258"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="back_arrow" width="256" height="256"/>
+        <image name="button_video_normal" width="75" height="75"/>
+        <image name="camera_icon" width="800" height="800"/>
+    </resources>
 </document>

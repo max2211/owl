@@ -1,0 +1,52 @@
+project PictureFilter
+
+customFilters/UnwrapFilter.swift — CIWarpFilter that unwraps input image to equirectangular format
+
+PictureFilter-Bridging-Header.h — bridging header to include the Objective-C CVWrapper header
+UIImage+OpenCV.h — header for the Objective-C UIImage <-> CVMat method declarations
+UIImage+OpenCV.mm — contains Objective-C implementations for UIImage <-> CVMat methods
+CVWrapper.h — header for the Objective-C OpenCV wrapper, containing declaration for the drawImageCircle method
+CVWrapper.mm — contains Objective-C implementation of drawImageCircle method
+circles.h — C++ header containing the computeImageCircle method declaration
+circles.cpp — contains the C++ implementation for the computeImageCircle method
+
+ViewController.swift — a view controller that starts with an unwrapped image; when touched (via button), the UnwrapFilter is applied and the output is displayed. Also contains deprecated code that saves a generated WrapMap using NSCoding.
+GLViewController.swift — view controller for the capture functions, using AVFoundation and AVAssetWriter
+
+
+WrapMap.swift — generate an image whose pixels contain the CI warp filter coordinates
+CameraController.swift — demonstrates how to initialize and configure an AVFoundation session 
+
+
+Viewing
+-Image/video picker
+-GVR viewer
+-fb-like viewer?
+
+Shooting
+-calibration with video shading 
+-photo/video mode
+-unwrapping and drawing crop to screen
+-recording
+
+
+small tasks:
+(x) update unwrap filter
+(x) make calibrate filter
+(x) insert calibration text and button (store every 30th frame; call circles fn; switch view — sessionQueue.async(execute:)
+(x) insert photo/video slider
+(x) get photo/video asset writer working
+
+( ) full screen button in collection view cell
+( ) refreshing collection view after shooting
+( ) delete 360 media
+( ) saving movies to 360 album
+( ) clean up filming UI (mostly timer)
+( ) displaying movies in collection view
+( ) clean up UI — Ryan
+( ) use Metal to apply filters (https://developer.apple.com/library/content/documentation/GraphicsImaging/Conceptual/CoreImaging/ci_tasks/ci_tasks.html)
+( ) crop unwrapped video for preview
+
+***enable bitcode no (build settings -> search bitcode)
+
+
